@@ -22,7 +22,7 @@
     </div>
 
     <!-- Conteúdo Principal -->
-    <div class="p-3 flex-grow-1">
+    <div class="page-content p-3 flex-grow-1">
         
         <!-- Formulário de Nova Ocorrência -->
         <div class="card card-custom p-3 mb-4">
@@ -37,8 +37,8 @@
                     </div>
                 </div>
 
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex gap-2">
+                <div class="form-actions d-flex justify-content-between align-items-center">
+                    <div class="d-flex flex-wrap gap-2">
                         <!-- Input de Arquivo -->
                         <label for="upload-foto" class="btn btn-custom-action btn-sm">
                             <i class="bi bi-camera me-1"></i> Câmera
@@ -46,7 +46,7 @@
                         <input type="file" id="upload-foto" accept="image/*" class="d-none">
 
                         <!-- Seletor de Tipo de Alerta -->
-                        <select id="tipo-alerta" class="form-select form-select-sm bg-dark text-light border-secondary" style="width: 130px;">
+                        <select id="tipo-alerta" class="form-select form-select-sm bg-dark text-light border-secondary alert-type-select">
                             <option value="Alagamento">Alagamento</option>
                             <option value="Árvore Caída">Árvore Caída</option>
                             <option value="Acidente">Acidente</option>
@@ -54,7 +54,7 @@
                         </select>
                     </div>
 
-                    <button type="submit" class="btn btn-primary btn-sm px-3">Publicar</button>
+                    <button type="submit" class="btn btn-primary btn-sm px-3 publish-button">Publicar</button>
                 </div>
             </form>
         </div>
